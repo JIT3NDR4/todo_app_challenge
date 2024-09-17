@@ -1,0 +1,41 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+.TodoTable tr.completed {
+  background-color: #C6F4D6;
+}
+
+.TodoTable tr.notcompleted {
+  background-color: #F7CAC9;
+}
+
+table tr:hover td {
+  background: yellow;
+  cursor: pointer;
+  zoom: 1.1;
+}
+
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  table {
+    font-size: 12px;
+  }
+}
